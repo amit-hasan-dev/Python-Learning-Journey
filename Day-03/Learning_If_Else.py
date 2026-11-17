@@ -1,0 +1,20 @@
+name = input("Name: ")
+age = int(input("Age: "))
+height = float(input("Height: "))
+city = input("City: ")
+learning = input("Learning: ")
+daily_study_hours = float(input("Daily Study Hours: "))
+answer = input("Are you learning Python? (yes/no): ").strip().lower()
+if answer == "yes": #learning if/else
+	learning_python = True
+else: learning_python = False
+print("\n==== PERSONAL PROFILE ====")
+print()
+print("Name:", name)
+print("Age:", age)
+print("Height:", height, "m")
+print("City:", city)
+print("Learning:", learning)
+print("Daily Study Hours:", daily_study_hours, "hours")
+print("Learning Python:", learning_python)
+print("\n==== PROFILE COMPLETED ====")
