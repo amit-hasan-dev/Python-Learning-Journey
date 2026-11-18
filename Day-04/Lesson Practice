@@ -1,0 +1,77 @@
+#01. Type Conversion / Casting
+#Type conversion changes a value from one data type to another.
+age = input("What's your age? ")
+print(age)
+print(type(age))
+print()
+#Convert it into an integer before performing a calculation:
+age = int(input("What's your age? "))
+print(age + 1)
+print()
+#Common conversion functions:
+number = 30
+print(float(number))
+print(str(number))
+print(bool(number))
+print()
+#The value must be suitable for conversion
+age = int("20")  #valid
+price = float("4.6")  #valid
+#int("hello")  #error
+
+#02. Sum Programme 
+num1 = int(input("Enter your 1st number: "))
+num2 = int(input("Enter your 2nd number: "))
+sum = num1 + num2
+print("Sum is", sum)
+print()
+#Avoid using "sum"" as a variable name because Python already has a built-in function called sum().
+#Without int(), inputs are joined as strings. So entering 10 and 20 gives 1020, not 30.
+
+#03. String Methods
+name = ("Tony Stark")
+#upper(),lower(),title(),capitalize()
+print(name.upper())
+print(name.lower())
+print(name.title())
+print(name.capitalize())
+#These methods return new strings. They do not change the original:
+print(name.upper())
+print(name) #Tony Stark #remained unchanged
+#Python strings are immutable, which means they cannot be changed directly.
+#To save the new value:
+name = name.upper()
+print(name)
+#find()
+#find() returns the position where a character or piece of text begins:
+print(name.find("ARK")) #7
+print(name.find("T")) #0
+print(name.find("X")) #-1
+#Python starts counting positions from 0. A result of -1 means the text was not found.
+#Searches are case-sensitive:
+print()
+print(name.find("S")) #5
+print(name.find("s")) #-1
+print()
+#replace()
+name = "Tony Stark"
+print(name.replace("Tony Stark","Iron Man"))
+print(name.replace("Stark","Iron Man"))
+print(name.replace("S","Man"))
+#The original string remains unchanged unless the result is assigned.
+name = name.replace("Tony Stark","Iron man")
+print(name)
+print()
+#04.Keywords
+#Keywords are reserved words with predefined meanings in Python. Examples include:
+#if,else,for,while,in,True,False,and,or,not
+#Use "in"" to check whether text is present inside a string:
+name = "Amit Hasan"
+print("m" in name) #True
+print("H" in name) #True
+print("q" in name) #False
+#The result is either "True"" or "False,"" and the check is case-sensitive.
+#Use "find()"" when you need the position:
+print(name.find("A")) #0
+#Use "in"" when you only need to check whether it exists:
+print("n" in name) #True
