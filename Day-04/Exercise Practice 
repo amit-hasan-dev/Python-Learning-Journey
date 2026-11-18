@@ -1,0 +1,24 @@
+#------ Solution 01 ------
+#Take the prices of 3 products
+product_01 = float(input("1st Product's Price: "))
+product_02 = float(input("2nd Product's Price: "))
+product_03 = float(input("3rd Product's Price: "))
+#Calculate the total and average
+total = product_01 + product_02 + product_03
+average = total /3
+#Display the results
+print("Total Bill Amount: ", total)
+print("Average Price: ", average)
+print()
+#------ Solution 02 ------
+#Take a superhero name and check its first letter
+superhero_name = input("Enter a superhero name: ")
+starts_with_s = superhero_name.lower().startswith("s")
+print("Does the superhero name start with S or s? ", starts_with_s)
+print()
+#------ Check Superhero Name Starting with S ------
+superhero_name = input("Enter a superhero name: ").strip()
+if superhero_name.lower().startswith("s"):
+	print("This is an S-name superhero!")
+else:
+	print("This is not an S-name superhero!")
